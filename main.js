@@ -1,14 +1,14 @@
-var authorization = "Bearer ***"; // replace by authorization value
+var authorization = "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"; // replace by authorization value
 var ua = navigator.userAgentData.brands.map(brand => `"${brand.brand}";v="${brand.version}"`).join(', ');
-var client_tid = "***"; // replace by X-Client-Transaction-Id value
-var client_uuid = "***"; // replace by X-Client-Uuid value
+var client_tid = "Tx1zcCnRldakCrxuH9NxCXKQc8u3/stLTGMA8R1mKrCZ8WFUfjo3J5QK++QfyV/ZWSb/8UwTcFfXm16ppbHMHoTCmPKuTA"; // replace by X-Client-Transaction-Id value
+var client_uuid = "3e424f51-2bf7-4db8-ac49-1fefcd7e748e"; // replace by X-Client-Uuid value
 var csrf_token = getCookie("ct0");
 var random_resource = "uYU5M2i12UhDvDTzN6hZPg";
 var random_resource_old_tweets = "H8OOoI-5ZE4NxgRr8lfyWg"
 var language_code = navigator.language.split("-")[0]
 var tweets_to_delete = []
 var user_id = getCookie("twid").substring(4);
-var username = "YourUsernameHere" // replace with your username
+var username = "lordsigmaroy" // replace with your username
 var stop_signal = undefined
 var twitter_archive_content = undefined
 var twitter_archive_loading_confirmed = false
@@ -60,8 +60,8 @@ var delete_options = {
 		Let's say you want to delete tweets from past 6 months. Today is September 19th 2023.
 		You would set after_date to 2023-03-18 (effectively 6 months ago) and before_date 2023-09-20 (tomorrow's date. So it deletes tweets from today too) 
 	*/
-	"after_date":new Date('1900-01-01'), // year-month-day
-	"before_date":new Date('2100-01-01') // year-month-day
+	"after_date":new Date('2023-02-01'), // year-month-day
+	"before_date":new Date('2025-04-27') // year-month-day
 }
 
 function buildAcceptLanguageString() {
